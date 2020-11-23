@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthenticatedStrategy.cs" />
+    <Compile Include="IUntappdAuthenticationStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnauthenticatedStrategy.cs" />
+    <Compile Include="UntappdAuthenticator.cs" />
     <Compile Include="UntappdRepository.cs" />
   </ItemGroup>
   <ItemGroup>
