@@ -11,15 +11,12 @@ namespace DataAccess
         private const string endpointBase = @"https://api.untappd.com/";
 
         private readonly RestClient _restClient;
+        private readonly UntappdAuthenticator _untappdAuthenticator;
 
         public UntappdRepository()
         {
             _restClient = new RestClient(endpointBase);
-        }
-
-        public void Authenticate()
-        {
-            throw new NotImplementedException();
+            _untappdAuthenticator = new UntappdAuthenticator();
         }
     }
 }
